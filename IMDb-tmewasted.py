@@ -18,8 +18,30 @@ import json
 ia = IMDb()
 final_time = list()
 finaltime = 0
+'''
+Watched till date
 
-webseries = ['0903747','0411008','0455275','0108778','0098904','0285403','6468322']
+Breaking bad - 0903747
+GoT- 0354595
+Prison Break-0455275
+Friends-0108778
+Seinfeld-0098904
+Scrubs-0285403
+Lost-0411008
+Sherlock-1475582
+Black Mirror-2085059
+Kota factory-9432978
+Yeh Meri Family-8595766
+Panchayat -12004706
+Sacred Games-6077448
+Made in Heaven-6494622
+The Family Man-9544034
+Paatal Lok-9680440
+TVF Pitchers -4742876
+Money Heist -6468322
+'''
+webseries = ['0903747','0354595','0455275','0108778','0098904','0285403','0411008','1475582','2085059','9432978','8595766','12004706','6077448','6494622'
+	     ,'9544034','9680440','4742876','6468322']
 for webserie in webseries:
 	movie = ia.get_movie(webserie, info=['episodes'])      # Band of Brothers
 	pprint(movie)
